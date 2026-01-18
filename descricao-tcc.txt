@@ -1,0 +1,56 @@
+TCC Metagenômica & ML
+
+ 
+
+Caso Clínico: Aplicação de Metatranscriptômica no Diagnóstico de Infecção Viral Suspeita de COVID-19
+
+Paciente:
+
+Nome: João Pereira
+Idade: 45 anos
+Gênero: Masculino
+Histórico Médico: Hipertensão controlada com medicação e obesidade grau I. Não vacinado contra COVID-19.
+Apresentação: João procura atendimento hospitalar apresentando febre persistente, tosse seca, fadiga extrema e dispneia moderada há cinco dias. Ele relata dor de cabeça intensa e perda de olfato e paladar nos últimos três dias. O quadro clínico inclui saturação de oxigênio em 91% ao repouso e sinais de inflamação nas vias respiratórias.
+
+Coletas de amostras e tipos de dados:
+
+Coleta de Amostras:
+Amostras de nasofaringe coletadas com swab.
+Dados:
+Sequenciamento Metatranscriptômica (Viroma) das amostras de nasofaringe (link)
+Matriz de feature com as contagens de organismos identificados por amostra (100 amostras).
+ 
+
+Tarefas:
+
+Desenvolver o pipeline de metagenômica para análise dos dados brutos de sequenciamento do paciente. Entrega: Jupyter notebook (pode ser colabs) com o pipeline.
+Desenvolver pipeline de chamada de variantes para o genoma do SARS-CoV-2 com anotação. Entrega: Jupyter notebook (pode ser colabs) com o pipeline + tabela com as variantes anotadas.
+Desenvolver um pipeline de dados para extração e transformação de features a partir dos dados brutos da amostra. Entrega: Jupyter notebook (pode ser colabs) com o pipeline de dados + vetor de features com as contagens de organismos identificados na amostra.
+Treinamento de um modelo de ML para predição de infecção com base na matriz de feature das 100 amostras fornecidas e predição na amostra do paciente. Entrega: Jupyter notebook (pode ser colabs) com o código em python do treinamento e predição do algoritmo de ML.
+ 
+
+Questões a serem respondidas na apresentação:
+
+A análise de Metatranscriptômica (Viroma) foi capaz de confirmar a presença de SARS-CoV-2? Qual linhagem de SARS-CoV-2 foi identificada?
+O genoma do SARS-CoV-2 apresenta mutações de interesse clínico, como variantes relacionadas à maior transmissibilidade ou resistência à neutralização por anticorpos?
+Há coinfecções com outros vírus ou patógenos bacterianos/fúngicos que podem agravar o quadro clínico?
+Com esta técnica conseguimos recuperar genomas bacterianos completos? E genes de resistência a antibióticos? Se sim, quais genomas e genes foram encontrados?
+Além da matriz de features com as contagens de organismos por amostras, qual outra feature poderia ser originada por engenharia de features dos dados genômicos da amostra do paciente?
+Foi feita algum tipo de normalização/transformação nas contagens brutas antes de submissão do dado a treinamento? Qual a finalidade das transformações?
+Qual algoritmo de ML foi escolhido para predição? Por quê?
+Qual a performance do modelo em dados de teste?
+Material fornecido
+
+Metatranscriptômica (Viroma)
+https://aulas-pos-hiae-public-data.s3.sa-east-1.amazonaws.com/TCC-metagenomica/patient_joao_VIROMA_S21_R1_001.fastq.gzLinks to an external site.
+https://aulas-pos-hiae-public-data.s3.sa-east-1.amazonaws.com/TCC-metagenomica/patient_joao_VIROMA_S21_R2_001.fastq.gzLinks to an external site.
+Matriz de feature para ML: 
+pivoted-virome-organisms-atleast10tpm-species-covid-TCC-pos.csvDownload pivoted-virome-organisms-atleast10tpm-species-covid-TCC-pos.csv
+Note que a tabela deve ser usado para treinamento e teste de um modelo de aprendizado supervisionado para predição de infecção por COVID (True or False para COVID-19). Os dados desta tabela são de números de reads identificados pelo Kraken2, normalizados pela técnica de Transcripts Per Million (TPMLinks to an external site.).
+Links úteis
+
+Genoma de referência SARS-CoV-2 (Wuhan): https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=fastaLinks to an external site. 
+Genotipagem SARS-CoV-2: https://pangolin.cog-uk.io/Links to an external site.
+Nextclade: https://clades.nextstrain.org/Links to an external site. 
+Análise de resistência: https://card.mcmaster.ca/analyze/rgiLinks to an external site.
+Orange Data Mining: https://orangedatamining.com/Links to an external site.

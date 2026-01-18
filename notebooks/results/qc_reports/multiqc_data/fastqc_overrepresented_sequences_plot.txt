@@ -1,0 +1,3 @@
+Sample	Top overrepresented sequence	Sum of remaining overrepresented sequences
+patient_joao_VIROMA_S21_R1_001	0.3040325396988434	3.4532344542821347
+patient_joao_VIROMA_S21_R2_001	0.28128335817483086	3.1619840633994576

@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+
+# Conda
+.conda/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dados grandes (não versionar)
+data/raw/*.fastq.gz
+data/raw/*.fastq
+data/processed/*.fastq.gz
+data/processed/*.fastq
+data/references/*.fa
+data/references/*.fasta
+data/references/*.fa.gz
+data/references/*.fasta.gz
+data/references/*.fai
+data/references/*.bt2
+data/references/*.sam
+data/references/*.bam
+data/references/*.bai
+data/references/*.vcf
+data/references/*.vcf.gz
+
+# Resultados e relatórios grandes
+results/**/*.html
+results/**/*.png
+results/**/*.pdf
+results/**/*.sam
+results/**/*.bam
+results/**/*.vcf
+results/**/*.vcf.gz
+results/**/*.fastq.gz
+
+# Modelos treinados (pode querer versionar, descomente se não quiser)
+# results/ml_results/*.pkl
+# results/ml_results/*.model
+
+# Logs e temporários
+*.log
+*.tmp
+*.temp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

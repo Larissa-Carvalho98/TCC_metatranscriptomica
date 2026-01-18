@@ -1,0 +1,3 @@
+Sample	fastqc-percent_duplicates	fastqc-percent_gc	fastqc-avg_sequence_length	fastqc-median_sequence_length	fastqc-percent_fails	fastqc-total_sequences
+patient_joao_VIROMA_S21_R1_001	68.28460070342288	47.0	140.41912589883995	147	27.27272727272727	1.314333
+patient_joao_VIROMA_S21_R2_001	64.08779005824147	47.0	140.38930088493555	147	27.27272727272727	1.314333

@@ -1,0 +1,2 @@
+patient,prediction,prediction_text,probability_covid,probability_no_covid
+João,1,POSITIVO para COVID-19,0.9578809523809524,0.04211904761904762

@@ -1,0 +1,3 @@
+Sample	Unique Reads	Duplicate Reads
+patient_joao_VIROMA_S21_R1_001	416846.0	897487.0
+patient_joao_VIROMA_S21_R2_001	472007.0	842326.0
