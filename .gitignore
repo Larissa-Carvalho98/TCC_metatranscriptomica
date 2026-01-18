@@ -66,6 +66,7 @@ results/**/*.bam
 results/**/*.vcf
 results/**/*.vcf.gz
 results/**/*.fastq.gz
+results/kraken2_reports/*.txt
 
 # Modelos treinados (pode querer versionar, descomente se não quiser)
 # results/ml_results/*.pkl
