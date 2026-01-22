@@ -1,7 +1,5 @@
 # TCC Metatranscriptômica & Machine Learning
 
-Pipeline completo para análise metatranscriptômica e predição de COVID-19 usando Machine Learning.
-
 ## Estrutura do Projeto
 
 ```
@@ -23,7 +21,7 @@ TCC_metatrascriptomica/
 
 ## Instalação
 
-### Opção 1: Usando Conda (Recomendado)
+### Opção 1: Usando Conda 
 
 ```bash
 # Criar ambiente conda
